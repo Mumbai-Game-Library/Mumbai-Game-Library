@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="description" content="Maintenance"> 
+<meta name="author" content="MumbaiGameLibrary"> 
+
+<title>MGL - Maintenance</title>
+
+<style> body{ text-align: center; background: #1989f9; font-family: sans-serif; font-weight: 100; }
+
+h1{ font-weight: 100; font-size: 40px; margin: 40px 0px 20px; }
+
+#clockdiv{ font-family: sans-serif; color: #fff; display: inline-block; font-weight: 100; text-align: center; font-size: 30px; }
+
+#clockdiv > div{ padding: 10px; border-radius: 3px; background: #19aef9; display: inline-block; }
+
+#clockdiv div > span{ padding: 15px; border-radius: 3px; background: #1976f9; display: inline-block; }
+
+.smalltext{ padding-top: 5px; font-size: 16px; } 
+
+footer { font-family: sans-serif; color: #fff; position: absolute; bottom: 0; text-align: center; width: 99%; }
+</style>
+
+<script type="text/javascript">
+
+function getTimeRemaining(endtime) { var t = endtime - new Date(); var seconds = Math.floor((t / 1000) % 60); var minutes = Math.floor((t / 1000 / 60) % 60); var hours = Math.floor((t / (1000 * 60 * 60)) % 24); var days = Math.floor(t / (1000 * 60 * 60 * 24)%31); return { 'total': t, 'days': days, 'hours': hours, 'minutes': minutes, 'seconds': seconds }; }
+
+function initializeClock(id, endtime) { var clock = document.getElementById(id);  var hoursSpan = clock.querySelector('.hours'); var minutesSpan = clock.querySelector('.minutes'); var secondsSpan = clock.querySelector('.seconds');
+
+function updateClock() { 
+var t = getTimeRemaining(endtime);
+
+hoursSpan.innerHTML = ('0' + t.hours).slice(-2); minutesSpan.innerHTML = ('0' + t.minutes).slice(-2); secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+if (t.total <= 0) { clearInterval(timeinterval);
+
+hoursSpan.innerHTML = ('0'); minutesSpan.innerHTML = ('0'); secondsSpan.innerHTML = ('0');
+document.getElementById("timer").style.display='none';
+document.getElementById("upmsg").style.display='block';
+ } }
+
+updateClock(); var timeinterval = setInterval(updateClock, 1000); }
+
+window.onload=function() {
+var deadline = new Date(2018,8,15,0,0,0);
+initializeClock('clockdiv', deadline);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="row well"> <div class="col-md-3"> </div> <div class="col-md-6"> <h1>Mumbal Game Library is under maintenance</h1> </div> <div class="col-md-3"> </div> 
+</div>
+
+<div id="timer">
+<h2>The web site will be available in : </h2>
+<div id="clockdiv"> 
+<div> <span class="hours"></span> <div class="smalltext">Hours</div> </div> <div> <span class="minutes"></span> <div class="smalltext">Minutes</div> </div> <div> <span class="seconds"></span> <div class="smalltext">Seconds</div> </div></div> 
+</div>
+
+<div id="upmsg" style="display: none"> <h2>We will be available shortly</h2></div>
+
+<footer><h4>Contact: mumbai.game.library@gmail.com</h4></footer>
+
+</body> 
+</html>
