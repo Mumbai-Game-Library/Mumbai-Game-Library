@@ -209,18 +209,98 @@ text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&n
 <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
 text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
 
-<!--
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>Please
-note, Buy &amp; Sell prices changes on daily basis. We will soon provide online
-facility check prices &amp; availability of stocks. </span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>Till
-then, to know game's buy &amp; sell price, drop an email to </span><a
-href="mailto:mumbai.game.library@gmail.com"><span style='font-size:8.0pt;
-line-height:107%;color:white'>mumbai.game.library@gmail.com</span></a></p>
--->
+	
+	<!-- #region Jssor Slider Begin -->
+    <script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 0,
+              $SlideDuration: 5000,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 140,
+              $Align: 0
+            };
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            /*#region responsive code begin*/
+            var MAX_WIDTH = 980;
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+                if (containerWidth) {
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="Games/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="Games/PS4 A Way Out.jpg" />
+            </div>
+           <div>
+                <img data-u="image" src="Games/PS4 Call of Duty WWII.jpg" />
+            </div>
+           <div>
+                <img data-u="image" src="Games/PS4 Detroit Become Human.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Games/PS4 Far Cry 5.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Games/PS4 God of War.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Games/PS4 WWE 2K17.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Games/PS4 WWE 2K18.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Games/PS4 Ghost Recon Wildlands.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Games/PS4 Uncharted 4- A Thiefs End.jpg" />
+            </div>
+	    <div>
+                <img data-u="image" src="Games/PS4 Watch Dogs 2.jpg" />
+            </div>
+	    <div>
+                <img data-u="image" src="Games/PS4 Wolfenstein 2 The New Colossus.jpg" />
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript">jssor_1_slider_init();</script>
+	<!-- #endregion Jssor Slider End -->
+	
 
 <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
 text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
