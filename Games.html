@@ -1,334 +1,87 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Mumbai Game Library - 2018 - Games available on Rent</title>
-<link rel="shortcut icon" type="image/png" href="https://mumbai-game-library.github.io/Mumbai-Game-Library/Home-2019_files/logo.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Mangal;
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Algerian;
-	panose-1:4 2 7 5 4 10 2 6 7 2;}
-@font-face
-	{font-family:Webdings;
-	panose-1:5 3 1 2 1 5 9 6 7 3;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{mso-style-link:"Header Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-a:link, span.MsoHyperlink
-	{color:#0563C1;
-	text-decoration:none;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:#0563C1;
-	text-decoration:none;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-span.HeaderChar
-	{mso-style-name:"Header Char";
-	mso-style-link:Header;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:107%;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:1.0cm 42.45pt 28.4pt 1.0cm;
-	border-top:none;
-	border-left:solid white 1.0pt;
-	border-bottom:none;
-	border-right:solid white 1.0pt;
-	padding:0cm 24.0pt 0cm 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Styles for the image container */
+        #image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        /* Styles for individual game images */
+        .game-image {
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .game-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
+<body>
+    <h1>Games</h1>
+    <div id="image-container"></div>
 
-<body bgcolor=black lang=EN-IN link="#0563C1" vlink="#954F72">
+    <script>
+        // JavaScript code to dynamically load game images from the 'images' folder
+        const imageContainer = document.getElementById("image-container");
 
-<div class=WordSection1>
+        // Define an array of game image file names
+        const gameImages = [
+            "PS4 Cricket 19 International Edition.jpg", 
+            "PS4 A Way Out.jpg", 
+            "PS4 Call of Duty WWII.jpg",
+            "PS4 Detroit Become Human.jpg",
+            "PS4 Cyberpunk 2077.jpg",
+            "PS4 Watch Dogs.jpg",
+            "PS4 Mavels Avengers.jpg",
+            "PS4 Ghost Recon Wildlands.jpg",
+            "PS4 Far Cry 5.jpg",
+            "PS4 Ghost of Tsushima.jpg",
+            "PS4 Sniper Elite 4.jpg",
+            "PS4 Ride 4.jpg",
 
-<p class=MsoNormal align=center style='text-align:center'><span
-style='color:white'>&nbsp;</span></p>
+            "XB1 Forza Motorsport 7.jpg",
+            "XB1 Quantum Break.jpg",
+            "XB1 Halo 5 Guardians.jpg",
+            "XB1 Gears of War 4.jpg",
+            "XB1 PlayerUnknown Battlegrounds 1.0.jpg",
+        ];
 
-<p class=MsoNormal align=center style='text-align:center'><a
-name="_Hlk503639108"><span style='color:white'><img width=172 height=153
-id="Picture 2" src="Home-2018_files/image001.png"></span></a></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><u><span
-style='font-size:36.0pt;line-height:107%;font-family:Algerian;color:white'>M</span></u><u><span
-style='font-size:24.0pt;line-height:107%;font-family:Algerian;color:white'>umbai</span></u><u><span
-style='font-size:36.0pt;line-height:107%;font-family:Algerian;color:white'> G</span></u><u><span
-style='font-size:24.0pt;line-height:107%;font-family:Algerian;color:white'>ame</span></u><u><span
-style='font-size:36.0pt;line-height:107%;font-family:Algerian;color:white'> L</span></u><u><span
-style='font-size:24.0pt;line-height:107%;font-family:Algerian;color:white'>ibrary</span></u></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='font-size:14.0pt;line-height:107%;
-color:white'>PlayStation 4 Games available on Rent</span></u></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-	
-<div style="text-align:center;width:100%;">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkDQbDgQtySssT_RWz8KE9Z4PCSWlOycLO9SrmvuANRbtDhGyYRMQN1NAHDyOTauBaIGgqoEWHVnGi/pubhtml?gid=0&single=true&amp;widget=true&amp;headers=false" 
-	width="70%" height="500" scrolling="no" style="overflow:hidden;display:inline-block;"></iframe>
-</div>
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='font-size:14.0pt;line-height:107%;
-color:white'>Xbox One Games available on Rent</span></u></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<div style="text-align:center;width:100%;">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTgB2gdtk3VGHyEAn0pOjHO3FqUwA8Bq9ua72QV6nq2lDxVzzyaZylHkITT8wPwdbCxBA9WMDmva4uL/pubhtml?gid=0&single=true&amp;widget=true&amp;headers=false" 
-	width="70%" height="500" scrolling="no" style="overflow:hidden;display:inline-block;"></iframe>
-</div>
-	
-	
-	
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-	
-	
-	<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='font-size:14.0pt;line-height:107%;
-color:white'>PlayStation VR Games available on Rent</span></u></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<div style="text-align:center;width:100%;">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQlzQkoSMkWn7aX2lK8nRAqhnSIek4xj7jPd2RiPoQSDMlIc2gr2avaXGoplLN1dzIALx0oifBhEeyB/pubhtml?gid=0&single=true&amp;widget=true&amp;headers=false" 
-	width="70%" height="500" scrolling="no" style="overflow:hidden;display:inline-block;"></iframe>
-</div>
-	
-	
-	
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='color:white'><span style='text-decoration:
- none'>&nbsp;</span></span></u></p>
-	
-	
-	
-	
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><u><span style='font-size:14.0pt;line-height:107%;
-color:white'>PC Games available on Rent</span></u></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='color:white'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:40%'><span style='color:white'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:white'>Prince Of Persia : Sands Of Time</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:40%'><span style='color:white'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:white'>Prince Of Persia : Warrior Within</span></p>
-	
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:40%'><span style='color:white'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:white'>Prince Of Persia : The Two Thrones</span></p>
-	
-	
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-	
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>
-<a href="https://mumbai-game-library.github.io/Mumbai-Game-Library/">
-<span style='font-size:10.0pt;line-height:107%;color:DodgerBlue'><i class="fa fa-home"></i></span>
-Back to Home</a></span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center'><span style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-
-<div align=center>
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=708
- style='width:531.35pt;border-collapse:collapse;border:none'>
- <tr>
-  <td width=274 valign=top style='width:205.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:normal'><span style='color:white'>Email: <a
-href="mailto:mumbai.game.library@gmail.com"><span class=MsoHyperlink><span
-									   style='color:white'>mumbai.game.library@gmail.com</span></span></a> </span></p>
-  </td>
-  <td width=302 valign=top style='width:8.0cm;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:normal'><span style='font-family:Wingdings;
-  color:white'></span><span style='color:white'> </span><a
-  href="https://mumbai-game-library.github.io/Mumbai-Game-Library"><span style='color:white'>www.mumbai-game-library.github.io</span></a><span
-  style='color:white'> </span></p>
-  </td>
-  <td width=132 valign=top style='width:99.25pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:107%'>
-  <span style='color:SpringGreen'><i class="fa fa-whatsapp"></i></span> <span style='color:white'>+91-0000000000 </span></p>
-  </td>
- </tr>
-</table>
-
-</div>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:8.0pt;line-height:107%;color:white'>&nbsp;</span></p>
-
-</div>
-
+        // Loop through the gameImages array and create image elements
+        gameImages.forEach((imageName) => {
+            const img = document.createElement("img");
+            img.src = `Games/${imageName}`;
+            img.alt = `Game ${imageName.split(".")[0]}`;
+            img.className = "game-image";
+            imageContainer.appendChild(img);
+        });
+    </script>
 </body>
-
 </html>
