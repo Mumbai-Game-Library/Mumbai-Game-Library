@@ -1,12 +1,28 @@
 <script>
 window.onload = function() {
 
+/*
 var today = new Date();
 if(today.getDay() == 6 || today.getDay() == 0) {
 	window.location.replace("https://mumbai-game-library.github.io/Mumbai-Game-Library/Home.html");
 } else {
 	window.location.replace("https://mumbai-game-library.github.io/Mumbai-Game-Library/offline.html");
 }
+*/
+
+	const currentDate = new Date();
+	const targetDate = new Date("2023-09-19");
+
+        // Compare the current date with the target date
+        if (currentDate >= targetDate) {
+            // Redirect to Home.html
+            // window.location.href = "Home.html";
+		window.location.replace("https://mumbai-game-library.github.io/Mumbai-Game-Library/Home.html");
+        } else {
+            // Redirect to offline.html
+            // window.location.href = "offline.html";
+		window.location.replace("https://mumbai-game-library.github.io/Mumbai-Game-Library/offline.html");
+        }
 
     
 }
